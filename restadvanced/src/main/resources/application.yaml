@@ -1,3 +1,22 @@
 spring:
   application:
     name: restadvanced
+
+  datasource:
+    url: jdbc:h2:mem:restdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console # http://localhost:8080/h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: create # 실행시마다 테이블 새로 만듭니다.
+    show-sql: true #JPA가 실행하는 SQL을 콘솔에 보여줍니다.
+    properties:
+      hibernate:
+        format_sql: true
