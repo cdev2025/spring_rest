@@ -198,10 +198,15 @@ SELECT * FROM PRODUCT;
 `restadvance/build.gradle`에 다음 의존성이 포함되어야 합니다.
 
 ```gradle
+implementation 'org.springframework.boot:spring-boot-starter-validation'
+implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:'
+
+implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3")
+
 implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 runtimeOnly 'com.h2database:h2'
 implementation 'org.springframework.boot:spring-boot-h2console'
-implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3")
 ```
 
 > Spring Boot 4.x 환경에서는 H2 Console 사용을 위해 `spring-boot-h2console` 의존성이 필요할 수 있습니다.
