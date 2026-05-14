@@ -225,23 +225,4 @@ implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3")
 10. 레이어드 아키텍처 기반의 Spring Boot API 설계
 ```
 
----
 
-## Git Commit 예시
-
-```bash
-git add .
-git commit -m "feat: H2와 JPA 기반 레이어드 아키텍처 실습 추가"
-```
-
-H2 Console 의존성을 추가한 경우:
-
-```bash
-git commit -m "fix: H2 콘솔 접속을 위한 의존성 추가"
-```
-
----
-
-## 수업 한 줄 정리
-
-레이어드 아키텍처는 코드를 Controller, Service, Repository, DB로 나누어 각 계층이 자기 책임에 집중하도록 만드는 Spring Boot의 기본 구조입니다.
