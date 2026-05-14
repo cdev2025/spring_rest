@@ -207,6 +207,9 @@ implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3")
 implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 runtimeOnly 'com.h2database:h2'
 implementation 'org.springframework.boot:spring-boot-h2console'
+
+compileOnly 'org.projectlombok:lombok'
+annotationProcessor 'org.projectlombok:lombok'
 ```
 
 > Spring Boot 4.x 환경에서는 H2 Console 사용을 위해 `spring-boot-h2console` 의존성이 필요할 수 있습니다.
